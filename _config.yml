@@ -1,0 +1,42 @@
+# Site settings
+name: Dhamodharan
+title: "Dhamodharan"
+description: "Responsible human with 3+ years of experience in Python and working as Senior Software Developer"
+url: "https://dhamodharanrk.github.io"
+
+
+# Delete lines you don't need
+# about 5 elements are recomended
+github_username:  dhamodharanrk
+codepen_username: dhamodharanrk
+linkedin_username: dhamodharanrk
+stack_of_username: 8595312
+mr_tutorials : "https://dhamodharanrk.github.io/MrTutor/"
+blog_url: "https://sites.google.com/view/way2learnings/home"
+email: dhamodharanrk@gmail.com
+public_key_url: "https://pastebin.com/u/dhamodharanrk"
+download_resume: "https://github.com/dhamodharanrk/dhamodharanrk.github.io/raw/master/data/Resume_Dhamodharan.pdf"
+resume: "https://dhamodharanrk.github.io/online-cv/"
+
+
+
+avatar: yes
+#avatar_img_path: "imgs/avatar.jpg""
+# You can link to your GitHub image. That way it will get updated
+# automatically whenever you change your GitHub profile picture
+avatar_img_path: "https://avatars0.githubusercontent.com/u/18685656?s=460"
+
+
+front_img: yes
+front_img_path: "imgs/background.jpg"
+#front_img_path: "https://external.url/image.jpg"
+
+
+favicon_img: yes
+favicon_img_path: "imgs/favicon.ico"
+#favicon_img_path: "https://external.url/favicon.ico"
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty

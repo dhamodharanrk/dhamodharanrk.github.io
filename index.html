@@ -1,0 +1,134 @@
+---
+permalink: /
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ site.description }}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        {% if site.favicon_img %}
+        <link rel="shortcut icon" href="{{ site.favicon_img_path }}" />
+        {% endif %}
+        <link rel="stylesheet" href="{{ "css/front.css" | prepend: site.baseurl }}">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  font-size: 12pt;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+    
+    <body>
+        <div class="content">
+            {% if site.front_img %}
+            <img src="{{ site.front_img_path }}" id="fullscreen">
+            {% endif %}
+
+            {% if site.avatar %}
+                <img src="{{ site.avatar_img_path }}" id="avatar">
+            {% endif %}
+
+            <h1>{{ site.name }}</h1>
+            <h3>{{ site.description }}</h3>
+
+                <ul>
+                    <div class="tooltip">
+                    {% if site.github_username %}
+                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}" target="_blank"><span class="tooltiptext">GitHub</span></a></li>
+                    {% endif %}
+                    </div>
+                    
+                    <div class="tooltip">
+                    {% if site.stack_of_username %}
+                    <li><a class="fa fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stack_of_username }}" target="_blank"><span class="tooltiptext">Stack Overflow</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                    <div class="tooltip">
+                    {% if site.codepen_username %}
+                    <li><a class="fa fa-2x fa-codepen" href="https://codepen.io/{{ site.codepen_username }}" target="_blank"><span class="tooltiptext">CodePen</span></a></li>
+                    {% endif %}
+                    </div>    
+                        
+                    <div class="tooltip">
+                    {% if site.public_key_url %}
+                    <li><a class="fa fa-2x fa-key" href="{{ site.public_key_url }}" target="_blank"><span class="tooltiptext">Pastebin</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.medium_username %}
+                    <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}" target="_blank"><span class="tooltiptext">Medium</span></a></li>
+                    {% endif %}
+                    </div>    
+                        
+                    <div class="tooltip">
+                    {% if site.mr_tutorials %}
+                    <li><a class="fa fa-2x fa-code" href="{{ site.mr_tutorials }}" target="_blank"><span class="tooltiptext">MrTutor</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.blog_url %}
+                    <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}" target="_blank"><span class="tooltiptext">Blog</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.linkedin_username %}
+                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><span class="tooltiptext">LinkedIn</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.email %}
+                    <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="tooltiptext">Email</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                    <div class="tooltip">
+                    {% if site.resume %}
+                    <li><a class="fa fa-2x fa-graduation-cap" href="{{ site.resume }}" target="_blank"><span class="tooltiptext">My Resume</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.download_resume %}
+                    <li><a class="fa fa-2x fa-download" href="{{ site.download_resume }}" download="Resume_Dhamodharan.pdf"><span class="tooltiptext">Download Resume</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                </ul>
+        </div>
+
+    </body>
+</html>

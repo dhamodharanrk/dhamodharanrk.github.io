@@ -1,20 +1,18 @@
 # Site settings
 name: Dhamodharan
 title: "Dhamodharan"
-description: "Having 5+ Years of experience in various data extraction and data analytics technologies with Python"
+description: "Having 6 years of experience in various Data Engineering and Text Analytics technologies with state of art Python"
 url: "https://dhamodharanrk.github.io"
 
 
 # Delete lines you don't need
 # about 5 elements are recomended
 github_username:  dhamodharanrk
-codepen_username: dhamodharanrk
 linkedin_username: dhamodharanrk
 stack_of_username: 8595312
 portfolio : "https://dhamodharanrk.github.io/portfolio"
 blog_url: "https://sites.google.com/view/way2learnings/home"
 email: dhamodharanrk@gmail.com
-public_key_url: "https://pastebin.com/u/dhamodharanrk"
 download_resume: "https://github.com/dhamodharanrk/dhamodharanrk.github.io/raw/master/data/Resume_Dhamodharan.pdf"
 resume: "https://dhamodharanrk.github.io/online-cv/"
 

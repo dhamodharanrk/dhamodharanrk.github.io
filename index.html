@@ -68,10 +68,53 @@ permalink: /
                     </div>
                     
                     <div class="tooltip">
+                    {% if site.portfolio %}
+                    <li><a class="bi bi-briefcase" href="{{ site.portfolio }}" target="_blank"><span class="tooltiptext">Portfolio</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                    <div class="tooltip">
+                    {% if site.blog_url %}
+                    <li><a class="bi bi-book-half" href="{{ site.baseurl }}{{ site.blog_url }}" target="_blank"><span class="tooltiptext">Blog</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                    <div class="tooltip">
+                    {% if site.book_marks %}
+                    <li><a class="bi bi-bookmark-heart" href="{{ site.book_marks }}" target="_blank"><span class="tooltiptext">BookMarks</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                    <div class="tooltip">
                     {% if site.stack_of_username %}
                     <li><a class="fa fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stack_of_username }}" target="_blank"><span class="tooltiptext">Stack Overflow</span></a></li>
                     {% endif %}
                     </div>    
+                    
+                    <div class="tooltip">
+                    {% if site.linkedin_username %}
+                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><span class="tooltiptext">LinkedIn</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.email %}
+                    <li><a class="bi bi-mailbox" href="mailto:{{ site.email }}"><span class="tooltiptext">Email</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
+                    <div class="tooltip">
+                    {% if site.resume %}
+                    <li><a class="fa fa-2x fa-graduation-cap" href="{{ site.resume }}" target="_blank"><span class="tooltiptext">My Resume</span></a></li>
+                    {% endif %}
+                    </div>    
+
+                    <div class="tooltip">
+                    {% if site.download_resume %}
+                    <li><a class="fa fa-2x fa-download" href="{{ site.download_resume }}" download="Resume_Dhamodharan.pdf"><span class="tooltiptext">Download Resume</span></a></li>
+                    {% endif %}
+                    </div>    
+                    
                     
                     <div class="tooltip">
                     {% if site.codepen_username %}
@@ -90,42 +133,7 @@ permalink: /
                     <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}" target="_blank"><span class="tooltiptext">Medium</span></a></li>
                     {% endif %}
                     </div>    
-                        
-                    <div class="tooltip">
-                    {% if site.portfolio %}
-                    <li><a class="fa fa-2x fa-code" href="{{ site.portfolio }}" target="_blank"><span class="tooltiptext">Portfolio</span></a></li>
-                    {% endif %}
-                    </div>    
-
-                    <div class="tooltip">
-                    {% if site.blog_url %}
-                    <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}" target="_blank"><span class="tooltiptext">Blog</span></a></li>
-                    {% endif %}
-                    </div>    
-
-                    <div class="tooltip">
-                    {% if site.linkedin_username %}
-                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><span class="tooltiptext">LinkedIn</span></a></li>
-                    {% endif %}
-                    </div>    
-
-                    <div class="tooltip">
-                    {% if site.email %}
-                    <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="tooltiptext">Email</span></a></li>
-                    {% endif %}
-                    </div>    
-                    
-                    <div class="tooltip">
-                    {% if site.resume %}
-                    <li><a class="fa fa-2x fa-graduation-cap" href="{{ site.resume }}" target="_blank"><span class="tooltiptext">My Resume</span></a></li>
-                    {% endif %}
-                    </div>    
-
-                    <div class="tooltip">
-                    {% if site.download_resume %}
-                    <li><a class="fa fa-2x fa-download" href="{{ site.download_resume }}" download="Resume_Dhamodharan.pdf"><span class="tooltiptext">Download Resume</span></a></li>
-                    {% endif %}
-                    </div>    
+                       
                     
                 </ul>
         </div>
